@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> To-Do List </title>
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <script src="MyJS.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+
+ <!-- start of header -->
+  <div class="header">
+     <div class="inner_header">
+        <div class="logo_container">
+        <img src ="MyList-Logo1.jpg" alt="Logo">
+        <h1> My List </h1>
+        </div>
+     </div>
+  </div>
+ <!-- end of header -->
+
+
+ <!-- Display the date -->
+ <p id="Date"> </p>
+
+ <!-- start of the page body -->
+
+   <!-- start of add list form -->
+    <div id="AddTask">
+
+        <form name="taskform" > 
+
+           <p class="Title"> Add a Task </p>
+           
+            <p><label class="subtitle">Task Name:
+            <input id="name" name="name" type="text" >
+           </label></p>
+
+           <p><label class="subtitle">Category:
+            <select id = "category" required>
+            <option value = "" > Choose Category </option>
+            <option value = "1" > Study </option>
+            <option value = "2" > Sport </option>
+            <option value = "3"> Home </option>
+            </select>
+           </label></p>
+
+           <p class="subtitle">Priority:
+
+           <label>
+            <input class ="priority" name="priority" type="radio" value="High" > High
+           </label>
+           <label>
+            <input  class ="priority" name="priority" type="radio" value="Medium"> Medium
+           </label>
+           <label>
+            <input  class ="priority" name="priority" type="radio" value="Low"> Low
+           </label>
+
+           </p>
+
+           <p>
+            <label class="subtitle"> Deadline:
+            <input id="deadline" name="deadline" type="date" min='1899-01-01' >
+            </label>
+           </p>
+
+           <p>
+            <input  class="button" id="submit"  type="button" value="Submit" />
+            <input  class="button" id="clear" type="reset" value="Clear">
+           </p>
+
+        </form>
+    </div>
+    <!-- end of add list form -->
+
+
+    <!-- start of To Do list -->
+     <div id="ToDoList">
+        <p class="Title"> To Do List</p>
+        <div id="addedtask">
+        </div>
+        <input class ="button1" id="done" name="done" type="button" value="Done">
+    </div> 
+
+    <!-- end of To Do list --> 
+
+
+    <!-- start of Done list -->
+    <div id="DoneList">
+        <p class="Title"> Done List </p>
+        <!-- <p id = "completedtask"></p> -->
+    </div>
+    <!-- end of Done list -->
+
+
+ <!-- start of footer -->
+ <div class="footer">
+    <div class="inner_footer">
+        <p>Copyright &copy; 2022 By Software Engineer</p>
+        <p><a href ="mailto:StudentID@student.ksu.ksu.edu.sa"> Email </a> </p>
+    </div>
+ </div>
+ <!-- end of footer -->
+
+</body>
+<!-- end of the page body -->
+</html>
